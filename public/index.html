@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>组合实验室 · 投资组合分析与调仓模拟</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<header><div><strong>组合实验室</strong><span>投资组合分析与调仓模拟</span></div><div id="snapshot">正在加载行情快照…</div></header>
+<main>
+<section id="overview" aria-label="组合概览"></section>
+<section class="panel">
+<h2>调仓模拟</h2>
+<p class="muted">按添加顺序，以固定快照价格执行。每次从原始组合开始重放。</p>
+<form id="trade">
+<label>方向<select name="side"><option value="sell">卖出</option><option value="buy">买入</option></select></label>
+<label>标的<select name="code"></select></label>
+<label>股数<input name="quantity" type="number" step="any" required placeholder="输入正整数"></label>
+<button>添加并模拟</button><button type="button" class="secondary" id="clear-operations">清空操作</button>
+</form>
+<ol id="operations"></ol>
+<form id="save">
+<label>方案名称<input name="name" maxlength="60" required placeholder="例如：降低科技集中度"></label>
+<button>保存方案</button>
+</form>
+<p id="error" role="alert" hidden></p>
+<p id="status" role="status">正在加载…</p>
+<div id="comparison"></div>
+</section>
+<section class="panel"><h2>已保存方案</h2><p class="muted">重开后可查看操作与对比结果。</p><div id="plans"></div></section>
+</main>
+</body>
+</html>

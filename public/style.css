@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+body{margin:0;background:#eef3f6;color:#142b37;font:15px/1.5 system-ui,"Microsoft YaHei",sans-serif}
+header{background:#102f3d;color:#d4e9ee;padding:22px max(5%,calc((100% - 1120px)/2));display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header strong{font-size:24px;color:white;margin-right:18px}
+main{max-width:1152px;padding:24px 16px 48px;margin:auto;display:grid;gap:18px}
+.panel{background:white;border:1px solid #d8e5eb;border-radius:12px;padding:20px 24px;margin-bottom:0}
+h1,h2,h3,p{margin:0 0 10px}h1{font-size:25px}h2{font-size:21px}h3{font-size:16px;margin-top:15px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+.metric{background:#edf6f6;padding:10px 15px;border-radius:8px;color:#385861}
+.metric strong{display:block;color:#14363e;font-size:23px;font-variant-numeric:tabular-nums}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #e5edf0}
+th{background:#f3f7f9;color:#385861}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.badges span{background:#ffeedc;color:#853815;padding:4px 9px;border-radius:5px}
+.badges span.clear{background:#e3f4e8;color:#245e36}
+form{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+label{display:grid;gap:4px;font-weight:600}
+input,select,button{font:inherit;border-radius:6px;min-height:36px;padding:6px 10px}
+input,select{background:white;border:1px solid #a9bec8;color:inherit}
+input[type=number]{width:135px}
+button{background:#126768;color:white;border:1px solid #126768;cursor:pointer}
+button.secondary{background:#fff;color:#126768}
+button:disabled,input:disabled,select:disabled{opacity:.55;cursor:default}
+.muted,#status{color:#49646f}
+#error{background:#fff0eb;color:#992d21;padding:9px 12px;border-radius:6px;margin-top:10px}
+#status{margin:8px 0}
+#operations{margin:9px 0 12px;padding-left:24px}
+.plan{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #e5edf0;overflow-wrap:anywhere}
